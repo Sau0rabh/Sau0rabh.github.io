@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased scroll-smooth">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saurabh Kumar - Electrical Engineering Portfolio</title>
+    <meta name="description" content="Electrical Engineering student at MMMUT Gorakhpur with hands-on experience in PLC industrial automation (Maruti Suzuki), 400 kV EHV substations (UPPTCL), embedded IoT systems, and clean energy modeling." />
+    <meta name="author" content="Saurabh Kumar" />
+    <meta property="og:title" content="Saurabh Kumar - Electrical Engineering Portfolio" />
+    <meta property="og:description" content="Electrical Engineering student at MMMUT Gorakhpur focused on PLC automation, power systems, high-voltage transmission, and embedded IoT." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/portfolio/saurabh-main.webp" />
+    <link rel="icon" href="favicon.ico" sizes="256x256" type="image/x-icon" />
+    <link rel="preload" as="image" href="images/portfolio/saurabh-main.webp" />
+    <link rel="stylesheet" href="_next/static/chunks/10hvai0_fknu_.css" />
+    <style>
+        /* Interactive animations and modal styling */
+        .modal-backdrop {
+            background-color: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .reveal-element {
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-visible {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+        .project-rail {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .project-rail::-webkit-scrollbar {
+            display: none;
+        }
+        .badge-pulse {
+            animation: pulse-dot 2s infinite ease-in-out;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
+        }
+
+        /* Distinct navbar desktop link spacing */
+        .desktop-nav-menu {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .desktop-nav-menu {
+                display: flex !important;
+                align-items: center;
+                gap: 0.75rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .desktop-nav-menu {
+                gap: 1.25rem;
+            }
+        }
+        .desktop-nav-menu a {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 0.875rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #475569;
+            border-radius: 9999px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .desktop-nav-menu a:hover {
+            background-color: #f1f5f9;
+            color: #020617;
+        }
+    </style>
+</head>
+
+<body class="min-h-full flex flex-col bg-white text-slate-950 font-sans selection:bg-teal-100 selection:text-teal-900">
+    <!-- Navigation Bar -->
+    <nav class="fixed left-0 right-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl transition-all duration-200" id="main-nav">
+        <div class="portfolio-container mx-auto flex h-16 w-full items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
+            <a href="#home" class="min-w-0 text-sm sm:text-base group" aria-label="Saurabh Kumar home">
+                <span class="inline-flex min-w-0 items-center gap-3">
+                    <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-teal-200 bg-teal-50 text-xs font-bold text-teal-800 transition duration-300 group-hover:scale-105 group-hover:border-teal-400">SK</span>
+                    <span class="min-w-0 leading-tight">
+                        <span class="block truncate font-semibold tracking-tight text-slate-950 group-hover:text-teal-700 transition">Saurabh Kumar</span>
+                        <span class="block truncate text-xs font-medium text-slate-500">Electrical Engineering Student · MMMUT</span>
+                    </span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="desktop-nav-menu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-2">
+                <a href="resume/Saurabh_Kumar.pdf" target="_blank" class="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-300 bg-slate-950 px-3.5 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-slate-800 sm:px-4 sm:text-sm" aria-label="View and Download Resume">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                    <span>View Resume</span>
+                </a>
+
+                <!-- Mobile menu toggle button -->
+                <button type="button" id="mobile-menu-btn" class="grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-slate-700 hover:bg-slate-100 md:hidden" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                    <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden border-b border-slate-200 bg-white px-4 py-4 md:hidden">
+            <div class="flex flex-col space-y-2">
+                <a href="#about" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">About Me</a>
+                <a href="#skills" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Technical Skills</a>
+                <a href="#experience" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Experience</a>
+                <a href="#projects" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+                <a href="#education" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Education &amp; Credentials</a>
+                <a href="#contact" class="mobile-nav-link rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Contact</a>
+                <a href="resume/Saurabh_Kumar.pdf" target="_blank" class="rounded-lg bg-teal-50 px-3 py-2 text-sm font-semibold text-teal-800">Download Full Resume (PDF)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="portfolio-home min-h-screen overflow-x-hidden">
+        
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section px-5 pt-24 sm:px-6 md:pt-32 xl:pt-36">
+            <div class="portfolio-container hero-container mx-auto w-full pb-12 md:pb-20 xl:pb-24">
+                <div class="portfolio-hero-grid grid w-full items-center gap-8 md:gap-12 lg:grid-cols-[1.05fr_0.95fr] xl:gap-16">
+                    
+                    <!-- Left Hero Copy -->
+                    <div class="hero-copy w-full min-w-0">
+                        <div class="mb-5 flex flex-wrap gap-2">
+                            <span class="rounded-full border border-teal-200 bg-teal-50/70 px-3 py-1.5 text-xs font-semibold text-teal-800">Industrial Automation</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700">PLC &amp; Ladder Logic</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700">400 kV EHV Substations</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700">Embedded Systems &amp; IoT</span>
+                        </div>
+                        <h1 class="max-w-4xl text-[2.1rem] font-semibold leading-[1.14] tracking-tight text-slate-950 sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl">
+                            Electrical engineering for industrial automation, power systems, and embedded control.
+                        </h1>
+                        <p class="mt-6 max-w-3xl text-base leading-7 text-slate-600 md:text-lg xl:text-xl xl:leading-8">
+                            I am an Electrical Engineering student at <strong class="font-semibold text-slate-900">Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur</strong> with practical industrial engineering experience in PLC-controlled automotive production at <strong class="font-semibold text-slate-900">Maruti Suzuki India Limited</strong>, 400 kV extra-high-voltage substation operations at <strong class="font-semibold text-slate-900">UPPTCL</strong>, and microclimate IoT automation.
+                        </p>
+                        
+                        <div class="mt-8 flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap">
+                            <a href="#experience" class="inline-flex items-center justify-center gap-2 rounded-full bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-800">
+                                View Experience
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </a>
+                            <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-50">
+                                Project Evidence
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+                            </a>
+                            <a href="resume/Saurabh_Kumar.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Image Card (Saurabh Kumar) -->
+                    <div class="flex justify-center">
+                        <div class="hero-image-card relative w-full max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-xl shadow-slate-200/50 group">
+                            <img alt="Saurabh Kumar portrait" width="1024" height="683" fetchPriority="high" class="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.02]" src="images/portfolio/saurabh-main.webp" />
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 via-slate-950/40 to-transparent p-5 text-white">
+                                <p class="text-sm font-semibold text-white tracking-tight">Saurabh Kumar</p>
+                                <p class="text-xs text-slate-200 font-medium">B.Tech in Electrical Engineering · Department of EE, MMMUT Gorakhpur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Evidence Snapshot Panel -->
+                <div class="mt-12 md:mt-16 reveal-element">
+                    <div class="evidence-panel relative mx-auto w-full max-w-5xl">
+                        <div class="absolute -inset-3 rounded-2xl bg-[linear-gradient(135deg,rgba(13,148,136,0.12),rgba(14,165,233,0.10),rgba(99,102,241,0.08))]"></div>
+                        <div class="relative rounded-xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-200/70 sm:p-6">
+                            <div class="mb-5 flex flex-col gap-3 border-b border-slate-200 pb-4 sm:flex-row sm:items-center sm:justify-between">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-teal-700">Engineering Snapshot</p>
+                                    <h3 class="mt-1 text-lg font-semibold text-slate-950">Industrial Automation, Power Transmission &amp; Embedded IoT Evidence</h3>
+                                </div>
+                                <div class="flex w-fit items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                                    <span class="h-2 w-2 rounded-full bg-emerald-500 badge-pulse"></span>
+                                    Resume-Verified Practical Work
+                                </div>
+                            </div>
+
+                            <div class="grid gap-4 lg:grid-cols-3">
+                                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 transition hover:bg-slate-50">
+                                    <div class="flex gap-3">
+                                        <div class="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-teal-200 bg-teal-50 text-teal-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M11 9h4a2 2 0 0 0 2-2V3"></path><circle cx="9" cy="9" r="2"></circle><path d="M7 21v-4a2 2 0 0 1 2-2h4"></path><circle cx="15" cy="15" r="2"></circle></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-slate-950">Industrial Automation &amp; PLCs</p>
+                                            <p class="mt-1 text-xs leading-5 text-slate-600">Mitsubishi MELSEC PLCs, GX Works2, Ladder Logic, VFDs, sensor arrays, actuators, and paint shop breakdown diagnostics at Maruti Suzuki.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 transition hover:bg-slate-50">
+                                    <div class="flex gap-3">
+                                        <div class="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-sky-200 bg-sky-50 text-sky-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-slate-950">400 kV EHV Power Transmission</p>
+                                            <p class="mt-1 text-xs leading-5 text-slate-600">High-voltage autotransformers, SF6 circuit breakers, numerical protection relays, switchyard SLDs, isolators, and busbars at UPPTCL.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 transition hover:bg-slate-50">
+                                    <div class="flex gap-3">
+                                        <div class="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-indigo-200 bg-indigo-50 text-indigo-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-slate-950">Embedded Systems &amp; Clean Tech</p>
+                                            <p class="mt-1 text-xs leading-5 text-slate-600">ESP32 microcontrollers, Blynk IoT cloud, autonomous relay logic, solar PV MPPT topologies, and clean mobility EV charging systems.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Academic Key Metrics -->
+                            <div class="mt-4 grid gap-3 sm:grid-cols-3">
+                                <div class="rounded-xl border border-slate-200 bg-white p-4 text-center sm:text-left">
+                                    <p class="text-2xl font-bold tracking-tight text-slate-950">7.01<span class="text-sm font-medium text-slate-400"> / 10.0</span></p>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Cumulative GPA (CGPA)</p>
+                                </div>
+                                <div class="rounded-xl border border-slate-200 bg-white p-4 text-center sm:text-left">
+                                    <p class="text-2xl font-bold tracking-tight text-slate-950">B.Tech EE</p>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">MMMUT Gorakhpur</p>
+                                </div>
+                                <div class="rounded-xl border border-slate-200 bg-white p-4 text-center sm:text-left">
+                                    <p class="text-2xl font-bold tracking-tight text-slate-950">2023 – 2027</p>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Academic Term (Final Year)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="border-t border-slate-200 bg-white px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto max-w-5xl">
+                <div class="section-heading mx-auto mb-14 md:mb-16 text-center reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">About Me</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Bridging electrical theory with real-world plant systems.</h2>
+                </div>
+
+                <div class="mt-10 md:mt-14 grid gap-8 md:gap-12 md:grid-cols-2 items-center">
+                    <div class="space-y-6 text-base leading-7 text-slate-600">
+                        <p>
+                            I am a final-year Electrical Engineering undergraduate at <strong class="text-slate-900 font-semibold">Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur</strong>. My academic journey is driven by a deep fascination with how electrical power is generated, distributed, protected, and intelligently automated across modern industrial infrastructure.
+                        </p>
+                        <p>
+                            During my project engineering internship at <strong class="text-slate-900 font-semibold">Maruti Suzuki India Limited (Gurugram)</strong>, I worked inside the high-precision Paint Shop Maintenance Department. I gained first-hand industrial exposure to Mitsubishi MELSEC PLCs, GX Works2 Ladder Logic programming, sensor-actuator interlocks, VFD drives, and diagnosed root causes across 15+ breakdown cases to keep assembly lines running smoothly.
+                        </p>
+                        <p>
+                            Earlier, during my training at <strong class="text-slate-900 font-semibold">UPPTCL</strong>, I studied the operational architectures of 400 kV extra-high-voltage substations, power transformers, SF6 switchgear, and numerical protection relay coordination. Complementing power systems, I build embedded IoT control systems using ESP32 and Arduino for precision automated agriculture.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 space-y-4">
+                        <h3 class="text-lg font-semibold text-slate-950 border-b border-slate-200 pb-3">Core Engineering Competencies</h3>
+                        <ul class="space-y-3 text-sm text-slate-700">
+                            <li class="flex items-start gap-3">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-teal-100 text-teal-800 text-xs font-bold">✓</span>
+                                <div><strong>Plant Automation &amp; Diagnostics:</strong> PLC programming in Ladder Logic, GX Works2, VFD parameterization, and preventive maintenance.</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-teal-100 text-teal-800 text-xs font-bold">✓</span>
+                                <div><strong>EHV Substation Engineering:</strong> 400 kV switchyard SLD analysis, transformer testing, SF6 circuit breakers, and protection schemes.</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-teal-100 text-teal-800 text-xs font-bold">✓</span>
+                                <div><strong>Embedded Firmware &amp; IoT:</strong> ESP32, Arduino IDE, closed-loop multi-sensor acquisition, and cloud dashboards (Blynk).</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-teal-100 text-teal-800 text-xs font-bold">✓</span>
+                                <div><strong>Power Electronics &amp; Renewables:</strong> Solar PV array sizing, MPPT charge control, and EV charging station microgrid analysis.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section id="skills" class="border-y border-slate-200 bg-slate-50 px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-12 max-w-4xl text-center md:mb-16 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Technical Skills</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Grounded in industrial control, power systems, and embedded hardware.</h2>
+                    <p class="mt-4 text-base leading-7 text-slate-600 md:text-lg">Grouped into verified domains based on practical industrial internships, university coursework, and hardware projects.</p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2">
+                    
+                    <!-- Skill Card 1: Industrial Automation & PLCs -->
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-teal-300 reveal-element">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="rounded-xl border border-teal-100 bg-teal-50 p-2.5 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M11 9h4a2 2 0 0 0 2-2V3"></path><circle cx="9" cy="9" r="2"></circle><path d="M7 21v-4a2 2 0 0 1 2-2h4"></path><circle cx="15" cy="15" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-950">Industrial Automation &amp; PLC Systems</h3>
+                                <p class="text-xs text-slate-500 font-medium">Maruti Suzuki Paint Shop Maintenance Experience</p>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm leading-6 text-slate-600">Hands-on industrial automation, control panel inspection, PLC logic development, preventive maintenance routines, and equipment breakdown root-cause diagnostics.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Mitsubishi PLCs</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">GX Works2</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Ladder Logic</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Safety PLCs</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">VFDs</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Sensors &amp; Actuators</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Relay Panels</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Contactors</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Conveyor Indexing</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Breakdown Diagnostics</span>
+                        </div>
+                    </article>
+
+                    <!-- Skill Card 2: Power Systems & EHV Transmission -->
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-sky-300 reveal-element">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="rounded-xl border border-sky-100 bg-sky-50 p-2.5 text-sky-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-950">Power Systems &amp; 400 kV Substations</h3>
+                                <p class="text-xs text-slate-500 font-medium">UPPTCL 400 kV Substation Internship Exposure</p>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm leading-6 text-slate-600">Extra-high-voltage transmission switchyards, autotransformer operation, switchgear protection, numerical relays, and single-line diagram (SLD) verification.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">400 kV EHV Systems</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Power Transformers</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">SF6 Circuit Breakers</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Protection Relays</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Isolators &amp; Earth Switches</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Busbar Schemes</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Surge Arresters</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">CT &amp; PT Transducers</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Single Line Diagrams (SLD)</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Substation Safety</span>
+                        </div>
+                    </article>
+
+                    <!-- Skill Card 3: Embedded Systems & IoT Engineering -->
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-indigo-300 reveal-element">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="rounded-xl border border-indigo-100 bg-indigo-50 p-2.5 text-indigo-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 7h10v10H7z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-950">Embedded Systems &amp; IoT Hardware</h3>
+                                <p class="text-xs text-slate-500 font-medium">Microcontroller Firmware &amp; Sensor Interfacing</p>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm leading-6 text-slate-600">Firmware development for embedded microcontrollers, multi-sensor analog/digital conditioning, I2C telemetry, and IoT cloud dashboard integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">ESP32</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Arduino IDE</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Embedded C/C++</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Blynk IoT Cloud</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">DHT11 / MQ135</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Soil Moisture &amp; Rain</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">16×2 I2C LCD</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Relay Actuation</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Wi-Fi Telemetry</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Breadboard Prototyping</span>
+                        </div>
+                    </article>
+
+                    <!-- Skill Card 4: Power Electronics, Clean Energy & Software -->
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-amber-300 reveal-element">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="rounded-xl border border-amber-100 bg-amber-50 p-2.5 text-amber-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M12 2v20"></path><path d="m17 5-5-3-5 3"></path><path d="m17 19-5 3-5-3"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-950">Power Electronics, Energy &amp; Tools</h3>
+                                <p class="text-xs text-slate-500 font-medium">Clean Mobility, Modeling &amp; Research</p>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm leading-6 text-slate-600">Solar PV generation architectures, MPPT charging algorithms, LiFePO4 battery storage, electric vehicle charging infrastructure, and MATLAB modeling.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Solar PV Systems</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">MPPT Algorithms</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">LiFePO4 Batteries</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">EVSE / Fast Chargers</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Vehicle-to-Grid (V2G)</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">MATLAB / Simulink</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">SAP Maintenance</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Technical Reporting</span>
+                            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">MS Excel</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE SECTION -->
+        <section id="experience" class="px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-12 max-w-4xl text-center md:mb-16 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Experience</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Professional engineering internships and technical work.</h2>
+                    <p class="mt-4 text-base leading-7 text-slate-600 md:text-lg">Click "View experience" on any position to view technical responsibilities, equipment handled, and contributions.</p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-3">
+                    
+                    <!-- Experience Card 1: Maruti Suzuki -->
+                    <article class="group flex min-h-[300px] flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl reveal-element">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="min-w-0">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <p class="text-sm font-semibold text-teal-700">Maruti Suzuki India Limited</p>
+                                    <span class="rounded-full border border-teal-200 bg-teal-50 px-2.5 py-0.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-teal-800">Core Industry</span>
+                                </div>
+                                <h3 class="mt-2 text-xl font-semibold tracking-tight text-slate-950">Project Engineering Intern</h3>
+                            </div>
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"></path><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-medium text-slate-500">
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+                                May 2026 – July 2026
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Gurugram, Haryana, India
+                            </span>
+                        </div>
+
+                        <p class="mt-4 text-sm font-medium leading-6 text-slate-700">Paint Shop industrial automation, Mitsubishi MELSEC PLCs, GX Works2 ladder programming, and breakdown diagnostics.</p>
+
+                        <div class="mt-auto flex items-end justify-between gap-4 pt-6">
+                            <div class="flex min-w-0 flex-wrap gap-1.5">
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">Mitsubishi PLC</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">GX Works2</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">VFDs</span>
+                            </div>
+                            <button type="button" onclick="openExperienceModal('msil')" class="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-slate-950 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500" aria-label="View experience details for Maruti Suzuki">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Experience Card 2: UPPTCL -->
+                    <article class="group flex min-h-[300px] flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl reveal-element">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="min-w-0">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <p class="text-sm font-semibold text-teal-700">UPPTCL</p>
+                                    <span class="rounded-full border border-sky-200 bg-sky-50 px-2.5 py-0.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-sky-800">State Transmission</span>
+                                </div>
+                                <h3 class="mt-2 text-xl font-semibold tracking-tight text-slate-950">Summer Intern (400 kV Substation)</h3>
+                            </div>
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-medium text-slate-500">
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+                                May 2025 – June 2025
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Gorakhpur, UP, India
+                            </span>
+                        </div>
+
+                        <p class="mt-4 text-sm font-medium leading-6 text-slate-700">400 kV extra-high-voltage substation switchyard, power transformers, SF6 breakers, and numerical protection relay panels.</p>
+
+                        <div class="mt-auto flex items-end justify-between gap-4 pt-6">
+                            <div class="flex min-w-0 flex-wrap gap-1.5">
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">400 kV Switchyard</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">SF6 Breakers</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">Relays</span>
+                            </div>
+                            <button type="button" onclick="openExperienceModal('upptcl')" class="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-slate-950 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500" aria-label="View experience details for UPPTCL">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Experience Card 3: Financially Free -->
+                    <article class="group flex min-h-[300px] flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl reveal-element">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="min-w-0">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <p class="text-sm font-semibold text-teal-700">Financially Free</p>
+                                    <span class="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-emerald-800">Certified</span>
+                                </div>
+                                <h3 class="mt-2 text-xl font-semibold tracking-tight text-slate-950">Content Writer &amp; Researcher</h3>
+                            </div>
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-medium text-slate-500">
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+                                March 2026 – May 2026
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Remote
+                            </span>
+                        </div>
+
+                        <p class="mt-4 text-sm font-medium leading-6 text-slate-700">Technical and financial research, high-retention scriptwriting contributing to channel growth from 200 to 100K+ subscribers.</p>
+
+                        <div class="mt-auto flex items-end justify-between gap-4 pt-6">
+                            <div class="flex min-w-0 flex-wrap gap-1.5">
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">Research</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">100K Growth</span>
+                                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.72rem] font-semibold text-slate-600">4M+ Views</span>
+                            </div>
+                            <button type="button" onclick="openExperienceModal('ff')" class="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-slate-950 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500" aria-label="View experience details for Financially Free">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION (CAROUSEL & CARDS) -->
+        <section id="projects" class="border-y border-slate-200 bg-slate-50 px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-10 max-w-4xl text-center md:mb-14 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Engineering Projects</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Engineering proof, design decisions, and hardware outcomes.</h2>
+                    <p class="mt-4 text-base leading-7 text-slate-600 md:text-lg">Each project is documented as a complete engineering study: problem statement, circuit architecture, hardware list, software, and validated results.</p>
+                </div>
+
+                <!-- Carousel Controls & Guide -->
+                <div class="mb-6 flex items-center justify-between gap-4">
+                    <p class="text-sm font-medium text-slate-500">Swipe or use arrows to navigate through the 4 engineering projects.</p>
+                    <div class="flex shrink-0 items-center gap-2">
+                        <button type="button" id="prev-project-btn" onclick="scrollProjectRail(-1)" aria-label="Previous project" class="grid h-10 w-10 place-items-center rounded-full border border-slate-300 bg-white text-slate-800 shadow-sm transition hover:border-teal-400 hover:text-teal-700 disabled:opacity-40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                        </button>
+                        <button type="button" id="next-project-btn" onclick="scrollProjectRail(1)" aria-label="Next project" class="grid h-10 w-10 place-items-center rounded-full border border-slate-300 bg-white text-slate-800 shadow-sm transition hover:border-teal-400 hover:text-teal-700 disabled:opacity-40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Horizontal Project Rail -->
+                <div id="project-rail" class="project-rail -mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
+                    
+                    <!-- Project Card 1: Smart Hydroponics System -->
+                    <div class="w-[88vw] min-w-[88vw] max-w-[420px] shrink-0 snap-start sm:w-[calc((100%-1.5rem)/2)] sm:min-w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] lg:min-w-[calc((100%-3rem)/3)]">
+                        <article class="group flex h-full min-h-[540px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-200/80 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl">
+                            <div class="relative aspect-[16/10] overflow-hidden border-b border-slate-200 bg-slate-100 cursor-pointer" onclick="openProjectModal('hydroponics')">
+                                <img alt="Smart Hydroponics System for Saffron Cultivation prototype" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="images/projects/hydroponics-prototype.jpeg" />
+                                <div class="absolute top-3 left-3">
+                                    <span class="rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-[0.7rem] font-semibold text-white">Embedded IoT</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-start justify-between gap-4">
+                                    <div>
+                                        <p class="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-teal-700">Precision Agri-Tech</p>
+                                        <h3 class="text-xl font-semibold tracking-tight text-slate-950 mt-1">Smart Hydroponics System for Saffron Cultivation</h3>
+                                    </div>
+                                    <div class="shrink-0 rounded-xl border border-slate-200 bg-slate-50 p-2 text-teal-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+                                    </div>
+                                </div>
+                                <p class="line-clamp-3 text-sm leading-6 text-slate-600">
+                                    An automated ESP32-based environmental chamber engineered for cultivating high-value saffron in non-traditional climates. Integrates DHT11, MQ135, LDR, soil moisture, and rain sensors with closed-loop relay actuation and Blynk IoT telemetry.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-1.5">
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">ESP32</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Blynk IoT</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Arduino C++</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Relays</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">16×2 LCD</span>
+                                </div>
+                                <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+                                    <button type="button" onclick="openProjectModal('hydroponics')" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-slate-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
+                                        Case Study
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </button>
+                                    <a href="documents/Saurabh_Kumar_Hydroponics_Report.pdf" target="_blank" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-slate-50">
+                                        Thesis PDF
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Card 2: Maruti Suzuki Paint Shop Industrial Automation -->
+                    <div class="w-[88vw] min-w-[88vw] max-w-[420px] shrink-0 snap-start sm:w-[calc((100%-1.5rem)/2)] sm:min-w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] lg:min-w-[calc((100%-3rem)/3)]">
+                        <article class="group flex h-full min-h-[540px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-200/80 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl">
+                            <div class="relative aspect-[16/10] overflow-hidden border-b border-slate-200 bg-slate-100 cursor-pointer" onclick="openProjectModal('msil')">
+                                <img alt="Maruti Suzuki Automotive Paint Shop PLC Conveyor System" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="images/projects/msil-paintshop-conveyor.jpeg" />
+                                <div class="absolute top-3 left-3">
+                                    <span class="rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-[0.7rem] font-semibold text-white">Industrial Automation</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-start justify-between gap-4">
+                                    <div>
+                                        <p class="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-teal-700">Manufacturing Reliability</p>
+                                        <h3 class="text-xl font-semibold tracking-tight text-slate-950 mt-1">Automotive Paint Shop PLC Automation &amp; Diagnostics</h3>
+                                    </div>
+                                    <div class="shrink-0 rounded-xl border border-slate-200 bg-slate-50 p-2 text-teal-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"></path><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                                    </div>
+                                </div>
+                                <p class="line-clamp-3 text-sm leading-6 text-slate-600">
+                                    Comprehensive engineering study of the automated paint shop sequence at Maruti Suzuki India Ltd (Gurugram). Covers Mitsubishi MELSEC PLC control, Ladder Logic, conveyor indexing, tank dipping interlocks, and 15+ breakdown cases.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-1.5">
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Mitsubishi MELSEC</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">GX Works2</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Ladder Logic</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">VFDs</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">CED Ovens</span>
+                                </div>
+                                <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+                                    <button type="button" onclick="openProjectModal('msil')" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-slate-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
+                                        Case Study
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </button>
+                                    <a href="documents/Saurabh_Kumar_MSIL_Report.pdf" target="_blank" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-slate-50">
+                                        Report PDF
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Card 3: Solar-Powered EV Charging Station -->
+                    <div class="w-[88vw] min-w-[88vw] max-w-[420px] shrink-0 snap-start sm:w-[calc((100%-1.5rem)/2)] sm:min-w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] lg:min-w-[calc((100%-3rem)/3)]">
+                        <article class="group flex h-full min-h-[540px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-200/80 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl">
+                            <div class="relative aspect-[16/10] overflow-hidden border-b border-slate-200 bg-slate-100 cursor-pointer" onclick="openProjectModal('solar_ev')">
+                                <img alt="Solar-Powered Electric Vehicle Charging System Architecture" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="images/projects/solar-ev-architecture.png" />
+                                <div class="absolute top-3 left-3">
+                                    <span class="rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-[0.7rem] font-semibold text-white">Power Systems &amp; Clean Mobility</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-start justify-between gap-4">
+                                    <div>
+                                        <p class="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-teal-700">Clean Energy &amp; Smart Grid</p>
+                                        <h3 class="text-xl font-semibold tracking-tight text-slate-950 mt-1">Solar-Powered EV Charging System with Smart EMS</h3>
+                                    </div>
+                                    <div class="shrink-0 rounded-xl border border-slate-200 bg-slate-50 p-2 text-teal-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                    </div>
+                                </div>
+                                <p class="line-clamp-3 text-sm leading-6 text-slate-600">
+                                    Technical evaluation of Solar PV generation integrated with MPPT controllers, LiFePO4 battery energy storage, bidirectional DC-DC converters, EVSE fast chargers, and smart Energy Management Systems (EMS) for peak shaving under India's FAME II.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-1.5">
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Solar PV</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">MPPT (P&amp;O)</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">LFP Battery BESS</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">EVSE</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">V2G Flow</span>
+                                </div>
+                                <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+                                    <button type="button" onclick="openProjectModal('solar_ev')" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-slate-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
+                                        Case Study
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </button>
+                                    <button type="button" onclick="openProjectModal('solar_ev')" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-slate-50">
+                                        Architecture
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Card 4: UPPTCL 400 kV EHV Substation -->
+                    <div class="w-[88vw] min-w-[88vw] max-w-[420px] shrink-0 snap-start sm:w-[calc((100%-1.5rem)/2)] sm:min-w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] lg:min-w-[calc((100%-3rem)/3)]">
+                        <article class="group flex h-full min-h-[540px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-200/80 transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-xl">
+                            <div class="relative aspect-[16/10] overflow-hidden border-b border-slate-200 bg-slate-100 cursor-pointer" onclick="openProjectModal('upptcl')">
+                                <img alt="Summer Intern at UPPTCL - 400 kV EHV Substation" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="images/projects/summer-intern-at-upptcl.png" />
+                                <div class="absolute top-3 left-3">
+                                    <span class="rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-[0.7rem] font-semibold text-white">400 kV Substation</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-start justify-between gap-4">
+                                    <div>
+                                        <p class="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-teal-700">Grid Engineering</p>
+                                        <h3 class="text-xl font-semibold tracking-tight text-slate-950 mt-1">400 kV EHV Substation Systems &amp; Relay Protection</h3>
+                                    </div>
+                                    <div class="shrink-0 rounded-xl border border-slate-200 bg-slate-50 p-2 text-teal-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                                    </div>
+                                </div>
+                                <p class="line-clamp-3 text-sm leading-6 text-slate-600">
+                                    Field study of extra-high-voltage transmission architecture at UPPTCL 400 kV Substation. Detailed analysis of 315 MVA power autotransformers, SF6 gas circuit breakers, isolators, differential protection, and lightning arresters.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-1.5">
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">400 kV Autotransformer</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">SF6 Switchgear</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Numerical Relays</span>
+                                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700">Busbar Zones</span>
+                                </div>
+                                <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+                                    <button type="button" onclick="openProjectModal('upptcl')" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-slate-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
+                                        Case Study
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </button>
+                                    <a href="certificates/upptcl-certificate.jpg" target="_blank" class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-slate-50">
+                                        Certificate
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & ACHIEVEMENTS SECTION -->
+        <section id="education" class="px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-12 max-w-4xl text-center md:mb-16 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Academic Background &amp; Credentials</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Education, certifications, and leadership roles.</h2>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-2">
+                    
+                    <!-- Left: Education Timeline -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-slate-950 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-700"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            Academic History
+                        </h3>
+
+                        <!-- University -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-teal-200">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <span class="rounded-full border border-teal-200 bg-teal-50 px-2.5 py-0.5 text-xs font-semibold text-teal-800">2023 – 2027 (Expected)</span>
+                                    <h4 class="text-lg font-semibold text-slate-950 mt-2">B.Tech in Electrical Engineering</h4>
+                                    <p class="text-sm font-medium text-slate-600">Madan Mohan Malaviya University of Technology, Gorakhpur (UP)</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-lg font-bold text-teal-700">7.01</p>
+                                    <p class="text-xs text-slate-400 font-medium">CGPA</p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-xs leading-5 text-slate-600">
+                                <strong>Key Coursework:</strong> Power Systems, Electrical Machines, Electrical Circuits &amp; Networks, Power Electronics, Control Systems, Signals &amp; Systems, Microprocessors, High Voltage Engineering.
+                            </p>
+                        </div>
+
+                        <!-- Intermediate (12th) -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <h4 class="text-base font-semibold text-slate-950">Intermediate (Class XII)</h4>
+                                    <p class="text-sm text-slate-600 mt-1">Lal Bahadur Shastri Intermediate College (UP Board)</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-base font-bold text-slate-900">78.2%</p>
+                                    <p class="text-xs text-slate-400 font-medium">Percentage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- High School (10th) -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <h4 class="text-base font-semibold text-slate-950">Secondary Education (Class X)</h4>
+                                    <p class="text-sm text-slate-600 mt-1">St. Xavier’s School, Azamgarh (CBSE Board)</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-base font-bold text-slate-900">84.8%</p>
+                                    <p class="text-xs text-slate-400 font-medium">Percentage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Positions of Responsibility & Certifications -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-slate-950 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-700"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                            Certifications &amp; Responsibilities
+                        </h3>
+
+                        <!-- Cert 1: MATLAB MathWorks -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex items-start gap-4">
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600 border border-orange-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m17 5-5-3-5 3"></path><path d="m17 19-5 3-5-3"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-950">MATLAB Certification</h4>
+                                <p class="text-xs text-teal-700 font-semibold mt-0.5">MathWorks</p>
+                                <p class="mt-2 text-xs leading-5 text-slate-600">Proficiency in numeric computing, algorithm simulation, dynamic electrical systems modeling, and data visualization using MATLAB.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2: AI For All TCS -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex items-start gap-4">
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 7h10v10H7z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-950">AI For All</h4>
+                                <p class="text-xs text-teal-700 font-semibold mt-0.5">TCS iON · Tata Consultancy Services</p>
+                                <p class="mt-2 text-xs leading-5 text-slate-600">Fundamental concepts of artificial intelligence, machine learning applications, ethical AI, and data processing frameworks.</p>
+                            </div>
+                        </div>
+
+                        <!-- Leadership 1: NCC -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex items-start gap-4">
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-950">Cadet · National Cadet Corps (NCC)</h4>
+                                <p class="text-xs text-teal-700 font-semibold mt-0.5">Discipline &amp; Leadership Development</p>
+                                <p class="mt-2 text-xs leading-5 text-slate-600">Trained in team leadership, crisis management, physical endurance, civic responsibility, and strategic coordination under military instructors.</p>
+                            </div>
+                        </div>
+
+                        <!-- Leadership 2: Financially Free -->
+                        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex items-start gap-4">
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-purple-50 text-purple-700 border border-purple-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-950">Technical Content Writer</h4>
+                                <p class="text-xs text-teal-700 font-semibold mt-0.5">Money Talk by Financially Free</p>
+                                <p class="mt-2 text-xs leading-5 text-slate-600">Researched complex economic and business mechanics to draft clear, evidence-based technical narratives reached by millions of viewers.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROLE FIT SECTION -->
+        <section class="border-t border-slate-200 bg-slate-50 px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-12 max-w-4xl text-center md:mb-16 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Role Fit</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">Target engineering roles and organizational alignment.</h2>
+                    <p class="mt-4 text-base leading-7 text-slate-600 md:text-lg">Profiles where my practical electrical, industrial automation, and embedded systems skills deliver immediate value.</p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div class="mb-4 flex items-center gap-3">
+                            <div class="rounded-xl border border-teal-100 bg-teal-50 p-2 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-slate-950">Industrial Automation &amp; Maintenance Engineer</h3>
+                        </div>
+                        <p class="text-sm leading-6 text-slate-600">PLC-driven manufacturing facilities, automotive assembly plants, automated conveyor lines, sensor-actuator calibration, and equipment breakdown diagnostics.</p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div class="mb-4 flex items-center gap-3">
+                            <div class="rounded-xl border border-teal-100 bg-teal-50 p-2 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.586 5.414-5.172 5.172"></path><path d="m18.586 13.414-5.172 5.172"></path><path d="M6 12h12"></path><circle cx="12" cy="20" r="2"></circle><circle cx="12" cy="4" r="2"></circle><circle cx="20" cy="12" r="2"></circle><circle cx="4" cy="12" r="2"></circle></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-slate-950">Substation &amp; Power Systems Engineer</h3>
+                        </div>
+                        <p class="text-sm leading-6 text-slate-600">Extra-high-voltage substations, power transformers, switchyard operation, SF6 circuit breakers, numerical protection schemes, and single-line diagram (SLD) execution.</p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div class="mb-4 flex items-center gap-3">
+                            <div class="rounded-xl border border-teal-100 bg-teal-50 p-2 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M11 9h4a2 2 0 0 0 2-2V3"></path><circle cx="9" cy="9" r="2"></circle><path d="M7 21v-4a2 2 0 0 1 2-2h4"></path><circle cx="15" cy="15" r="2"></circle></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-slate-950">Embedded Systems &amp; IoT Developer</h3>
+                        </div>
+                        <p class="text-sm leading-6 text-slate-600">Microcontroller firmware development (ESP32/Arduino), multi-sensor data acquisition, cloud telemetry (Blynk), automated relay actuation, and smart device prototyping.</p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div class="mb-4 flex items-center gap-3">
+                            <div class="rounded-xl border border-teal-100 bg-teal-50 p-2 text-teal-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-slate-950">Clean Energy &amp; EV Infrastructure Analyst</h3>
+                        </div>
+                        <p class="text-sm leading-6 text-slate-600">Solar PV generation modeling, MPPT algorithm tuning, battery storage (BESS) sizing, EV charging station power flow, and Vehicle-to-Grid (V2G) integration.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY HIRE ME SECTION -->
+        <section class="border-t border-slate-200 bg-white px-4 py-16 sm:px-6 md:py-24">
+            <div class="portfolio-container mx-auto">
+                <div class="section-heading mx-auto mb-12 max-w-4xl text-center md:mb-16 reveal-element">
+                    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-teal-700">Why Hire Me</p>
+                    <h2 class="text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">A disciplined engineer who connects theory with plant outcomes.</h2>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-3">
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 shadow-sm">
+                        <div class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-teal-100 text-teal-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-950">Real Industrial Plant Floor Judgment</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">Experience is grounded inside Maruti Suzuki's active automotive paint shop and a 400 kV UPPTCL transmission switchyard—not just classroom theory.</p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 shadow-sm">
+                        <div class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-teal-100 text-teal-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-950">Industrial Automation &amp; Power Versatility</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">Comfortable navigating PLC ladder code, motor control centers (MCC), high-voltage switchgear, and microcontroller IoT circuits in a single engineering mindset.</p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 shadow-sm">
+                        <div class="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-teal-100 text-teal-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-950">Rigorous Documentation &amp; NCC Discipline</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">NCC-trained work ethic combined with proven technical communication skills—enabling me to deliver structured fault reports, clear diagrams, and verifiable results.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="px-4 py-16 sm:px-6 md:py-24">
+            <div class="mx-auto max-w-4xl rounded-2xl border border-slate-200 bg-white p-8 sm:p-12 text-center shadow-xl shadow-slate-200/80 reveal-element">
+                <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-700 border border-teal-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
+                </div>
+                
+                <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">Open to practical electrical engineering work.</h2>
+                <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+                    I am interested in electrical reliability, power systems, instrumentation and controls, automation, and data-enabled engineering roles.
+                </p>
+
+                <!-- 3 Action Buttons matching reference design -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                    <a href="mailto:Saurabhkushwaha7991@gmail.com" class="inline-flex items-center gap-2 rounded-full bg-teal-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        Email Me
+                    </a>
+                    <a href="https://github.com/Saurabhkushwaha7991" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><line x1="6" x2="6" y1="3" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                        GitHub
+                    </a>
+                    <a href="resume/Saurabh_Kumar.pdf" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                        View Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="border-t border-slate-200 bg-white px-6 py-8">
+            <div class="portfolio-container mx-auto flex flex-col gap-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                    <p class="font-medium text-slate-700">© 2026 Saurabh Kumar. All rights reserved.</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Department of Electrical Engineering · MMMUT Gorakhpur</p>
+                </div>
+                <div class="flex items-center gap-4 text-xs font-medium">
+                    <a href="#home" class="hover:text-slate-900 transition">Back to Top ↑</a>
+                    <span>·</span>
+                    <a href="resume/Saurabh_Kumar.pdf" target="_blank" class="hover:text-slate-900 transition">Resume PDF</a>
+                    <span>·</span>
+                    <a href="mailto:Saurabhkushwaha7991@gmail.com" class="hover:text-slate-900 transition">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE EXPERIENCE DETAIL MODAL -->
+    <!-- ========================================================================= -->
+    <div id="experience-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="exp-modal-title">
+        <div class="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl transition duration-300 transform scale-95" id="exp-modal-card">
+            
+            <!-- Modal Header -->
+            <div class="border-b border-slate-200 bg-slate-50 px-6 py-5 flex items-start justify-between gap-4">
+                <div>
+                    <span id="exp-modal-badge" class="rounded-full border border-teal-200 bg-teal-50 px-2.5 py-0.5 text-xs font-semibold text-teal-800">Company</span>
+                    <h3 id="exp-modal-title" class="text-xl font-bold text-slate-950 mt-1.5">Role Title</h3>
+                    <p id="exp-modal-meta" class="text-xs font-medium text-slate-500 mt-1">Period · Location</p>
+                </div>
+                <button type="button" onclick="closeExperienceModal()" class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-slate-200 bg-white text-slate-600 hover:bg-slate-100 transition" aria-label="Close dialog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 sm:p-8 space-y-6 max-h-[75vh] overflow-y-auto">
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Overview</h4>
+                    <p id="exp-modal-summary" class="mt-2 text-sm leading-6 text-slate-700"></p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Key Responsibilities &amp; Engineering Contributions</h4>
+                    <ul id="exp-modal-bullets" class="mt-3 space-y-2.5 text-sm text-slate-700"></ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Systems &amp; Technologies Used</h4>
+                    <div id="exp-modal-tags" class="mt-2 flex flex-wrap gap-2"></div>
+                </div>
+
+                <div id="exp-modal-actions" class="pt-4 border-t border-slate-200 flex justify-end"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE PROJECT CASE STUDY MODAL -->
+    <!-- ========================================================================= -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="proj-modal-title">
+        <div class="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl transition duration-300 transform scale-95" id="proj-modal-card">
+            
+            <!-- Modal Header -->
+            <div class="border-b border-slate-200 bg-slate-50 px-6 py-5 flex items-start justify-between gap-4">
+                <div>
+                    <span id="proj-modal-category" class="rounded-full border border-teal-200 bg-teal-50 px-2.5 py-0.5 text-xs font-semibold text-teal-800">Domain</span>
+                    <h3 id="proj-modal-title" class="text-xl sm:text-2xl font-bold text-slate-950 mt-1.5">Project Title</h3>
+                </div>
+                <button type="button" onclick="closeProjectModal()" class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-slate-200 bg-white text-slate-600 hover:bg-slate-100 transition" aria-label="Close dialog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 sm:p-8 space-y-6 max-h-[75vh] overflow-y-auto">
+                <!-- Project Image Preview -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 max-h-80 flex items-center justify-center">
+                    <img id="proj-modal-image" class="w-full h-full object-contain" src="" alt="Project image" />
+                </div>
+
+                <!-- Problem Statement -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Problem Statement &amp; Objective</h4>
+                    <p id="proj-modal-problem" class="mt-2 text-sm leading-6 text-slate-700"></p>
+                </div>
+
+                <!-- Technical Architecture & Implementation -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Technical Architecture &amp; Implementation</h4>
+                    <p id="proj-modal-implementation" class="mt-2 text-sm leading-6 text-slate-700"></p>
+                </div>
+
+                <!-- Hardware & Software Grid -->
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Hardware Components</h5>
+                        <ul id="proj-modal-hardware" class="mt-2 space-y-1.5 text-xs text-slate-700 list-disc list-inside"></ul>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Software &amp; Tools</h5>
+                        <ul id="proj-modal-software" class="mt-2 space-y-1.5 text-xs text-slate-700 list-disc list-inside"></ul>
+                    </div>
+                </div>
+
+                <!-- Results and Outcomes -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Results &amp; Key Outcomes</h4>
+                    <ul id="proj-modal-outcomes" class="mt-2 space-y-2 text-sm text-slate-700"></ul>
+                </div>
+
+                <!-- Gallery / Schematics if available -->
+                <div id="proj-modal-gallery-container" class="space-y-3">
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-500">System Schematics &amp; Evidence</h4>
+                    <div id="proj-modal-gallery" class="grid gap-3 sm:grid-cols-2"></div>
+                </div>
+
+                <!-- Footer Action Links -->
+                <div id="proj-modal-actions" class="pt-4 border-t border-slate-200 flex flex-wrap gap-3 justify-end"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <!-- ========================================================================= -->
+    <script>
+        // Experience Data Store
+        const experiencesData = {
+            msil: {
+                company: "Maruti Suzuki India Limited",
+                badge: "Automobile Manufacturing",
+                title: "Project Engineering Intern",
+                period: "May 2026 – July 2026",
+                location: "Gurugram, Haryana, India",
+                summary: "Completed an intensive engineering internship within the Maintenance Department of the Paint Shop at Maruti Suzuki's Gurugram manufacturing facility. Focused on industrial automation control, PLC programming, breakdown troubleshooting, and plant equipment reliability.",
+                bullets: [
+                    "Gained hands-on exposure to PLC-based industrial automation including Mitsubishi MELSEC PLCs, GX Works2 software, Ladder Logic, and Safety PLCs.",
+                    "Studied and worked with I/O modules, control panels, sensors (proximity, photoelectric, thermocouples), actuators, relays, contactors, and Variable Frequency Drives (VFDs).",
+                    "Analyzed the complete sequence of automotive painting: Weld Shop Body Receipt (TL) → Pre-Treatment (PT) → Electro Deposition (ED/CED) → ED Baking Oven → Under-Body PVC Sealing & Stone Guard (SGC) → Intermediate Coat → Top Coat → Inspection & Touch-Up → Painted Body Release (PBOK/PBON) to Assembly.",
+                    "Supported the Maintenance Department in investigating 15+ equipment breakdown cases and performing preventive maintenance (PM) routines, reducing production line downtime.",
+                    "Worked under the direct mentorship of Rahul Patel (Manager) and Vinay Jangra (Assistant Manager, Paint Shop Maintenance)."
+                ],
+                tags: ["Mitsubishi PLC", "GX Works2", "Ladder Logic", "VFDs", "Conveyor Control", "Safety PLCs", "Breakdown Analysis", "Automotive Manufacturing"],
+                reportLink: "documents/Saurabh_Kumar_MSIL_Report.pdf",
+                reportTitle: "View Internship Report (PDF)"
+            },
+            upptcl: {
+                company: "UPPTCL (Uttar Pradesh Power Transmission Corporation Limited)",
+                badge: "State Power Transmission Grid",
+                title: "Summer Intern (400 kV Substation)",
+                period: "May 2025 – June 2025",
+                location: "Gorakhpur, Uttar Pradesh, India",
+                summary: "Underwent rigorous summer vocational training at UPPTCL's 400 kV Extra High Voltage (EHV) Substation in Gorakhpur. Studied extra-high-voltage power transmission, transformer operations, switchgear mechanics, and numerical grid protection.",
+                bullets: [
+                    "Gained practical exposure to 400 kV / 220 kV / 132 kV switchyard equipment, layouts, and Single Line Diagrams (SLD).",
+                    "Examined operation, cooling systems, and protection schemes of large 315 MVA Power Autotransformers and tertiary winding configurations.",
+                    "Studied high-voltage SF6 gas circuit breakers, operating mechanisms, arc quenching principles, and busbar configurations (including One-and-a-Half breaker scheme).",
+                    "Analyzed protection relay panels: distance protection (Zone 1/2/3), differential protection, overcurrent, and earth fault relays.",
+                    "Observed transformer oil testing procedures (Breakdown Voltage / BDV test) and safety earthing / clearance protocols."
+                ],
+                tags: ["400 kV EHV Substation", "Power Transformers", "SF6 Circuit Breakers", "Numerical Relays", "Isolators", "Busbar Schemes", "CT/PT Transducers", "Switchyard SLD"],
+                reportLink: "certificates/upptcl-certificate.jpg",
+                reportTitle: "View UPPTCL Certificate"
+            },
+            ff: {
+                company: "Financially Free",
+                badge: "Technical Media & Research",
+                title: "Content Writer & Technical Researcher",
+                period: "March 2026 – May 2026",
+                location: "Remote",
+                summary: "Conducted in-depth research on technical, business, and financial mechanisms to craft high-retention video scripts and analytical presentations. Validated through official Zoho Sign verified internship completion certification.",
+                bullets: [
+                    "Researched complex business and financial topics and transformed them into engaging, high-retention technical narratives.",
+                    "Authored video scripts for 'Money Talk by Financially Free' that contributed to YouTube channel growth from ~200 to 100,000+ subscribers.",
+                    "Authored content reaching an aggregate 4M+ organic views with above-average audience retention.",
+                    "Demonstrated disciplined self-direction, deadline management, and structured narrative communication."
+                ],
+                tags: ["Technical Research", "Scriptwriting", "Audience Retention", "Analytical Communication", "100K Channel Growth"],
+                reportLink: "resume/Saurabh_Kumar.pdf",
+                reportTitle: "View Resume Verification"
+            }
+        };
+
+        // Project Data Store
+        const projectsData = {
+            hydroponics: {
+                title: "Smart Hydroponics System for Saffron Cultivation",
+                category: "Embedded Systems · IoT Automation · Precision Agri-Tech",
+                image: "images/projects/hydroponics-prototype.jpeg",
+                problem: "Saffron (Crocus sativus) is the world's most valuable spice, traditionally restricted to temperate valleys like Kashmir due to demanding climatic requirements (15–20°C temperatures, 60–70% relative humidity, specific photoperiods, and delicate moisture control). Traditional open-field farming is vulnerable to unpredictable weather extremes, high water consumption, and soil-borne diseases.",
+                implementation: "Engineered a closed-loop microclimate chamber driven by an ESP32 microcontroller running C++ firmware in Arduino IDE. The ESP32 continuously polls an array of analog and digital sensors: DHT11 (temperature and relative humidity), MQ135 (air quality / gaseous toxins), capacitive soil moisture, rain sensor, and LDR (photoperiod light intensity). When any environmental parameter exceeds programmed biological growth thresholds, the controller triggers a 4-channel 5V relay module to actuate 12V DC cooling fans, ultrasonic humidifiers, submersible nutrient pumps, and full-spectrum LED grow lights. System metrics are refreshed locally on a 16×2 I2C LCD screen while transmitting telemetry over 808.11 b/g/n Wi-Fi to a Blynk IoT cloud dashboard with remote manual override controls.",
+                hardware: [
+                    "ESP32 Development Board (Tensilica 32-bit dual-core MCU with Wi-Fi/Bluetooth)",
+                    "DHT11 Temperature and Relative Humidity Sensor",
+                    "MQ135 Hazardous Gas and Air Quality Sensor",
+                    "Capacitive Soil / Substrate Moisture Sensor",
+                    "Rainfall Detection Sensor Module",
+                    "LDR Light Dependent Resistor module for ambient lux",
+                    "4-Channel 5V Optocoupler-Isolated Relay Module",
+                    "16×2 Character LCD with I2C PCF8574 Backpack",
+                    "12V DC High-CFM Ventilation and Cooling Fan",
+                    "Ultrasonic Cold Water Mist Humidifier",
+                    "Submersible 5V/12V DC Micro Water Nutrient Pump",
+                    "Full-Spectrum Plant Growth LED Array (Red/Blue PAR)",
+                    "Regulated 5V/12V DC Dual Power Supply Unit"
+                ],
+                software: [
+                    "Arduino IDE (Embedded C/C++ firmware architecture)",
+                    "Blynk IoT Cloud Platform (Mobile & Web interactive dashboards)",
+                    "I2C Communication Protocol (Wire library)",
+                    "Non-blocking millis() timer state machine logic"
+                ],
+                outcomes: [
+                    "Maintained automated environmental control within ±1.5°C temperature and ±4% RH of saffron target setpoints.",
+                    "Achieved 85%+ water conservation compared to conventional agricultural soil irrigation.",
+                    "Enabled year-round cultivation regardless of external geographic or seasonal constraints.",
+                    "Integrated dual on-site (LCD) and remote (Blynk IoT) monitoring for complete operational reliability."
+                ],
+                gallery: [
+                    { src: "images/projects/hydroponics-block-diagram.jpg", caption: "System Block Diagram (ESP32, Sensors & Actuators)" },
+                    { src: "images/projects/hydroponics-circuit-diagram.jpg", caption: "Hardware Circuit Wiring Schematic" }
+                ],
+                reportLink: "documents/Saurabh_Kumar_Hydroponics_Report.pdf",
+                reportTitle: "Read Thesis Report (PDF)"
+            },
+            msil: {
+                title: "Automotive Paint Shop Industrial Automation & PLC Diagnostics",
+                category: "Industrial Automation · PLC Programming · Manufacturing Reliability",
+                image: "images/projects/msil-paintshop-conveyor.jpeg",
+                problem: "In high-throughput automobile production at Maruti Suzuki, any malfunction in the paint shop line—such as conveyor timing desynchronization, dipping tank hoist delays, or baking oven temperature interlock faults—risks halting the entire vehicle manufacturing facility, causing massive production losses. A deep practical understanding of industrial PLC hardware, ladder sequence logic, and fail-safe interlocks is essential to maintain zero-downtime reliability.",
+                implementation: "Conducted an in-depth engineering analysis of the Paint Shop automation sequence from Weld Shop Body Receipt (TL) through Cathodic Electrodeposition (CED), PVC Underbody Sealing, Stone Guard Coating (SGC), Base/Clear Top Coating, to Painted Body Release (PBON/PBOK). Explored Mitsubishi MELSEC PLC architectures programmed in GX Works2, reviewing Ladder Logic rungs for sensor polling, conveyor drive synchronization via VFDs, safety curtain monitoring, and emergency stop interlocks. Supported the Maintenance Department in investigating 15+ actual plant breakdown cases, identifying faulty optical sensors, worn motor contactors, and pneumatic valve stickiness to restore production.",
+                hardware: [
+                    "Mitsubishi MELSEC Q-Series & FX-Series PLCs",
+                    "Mitsubishi Safety PLCs with dual-channel fail-safe inputs",
+                    "Digital Input/Output (DI/DO) & Analog (AI/AO) rack modules",
+                    "Variable Frequency Drives (VFDs) for overhead conveyor speed regulation",
+                    "Inductive & Photoelectric Proximity Sensors for car-body indexing",
+                    "Heavy-Duty Industrial Relays, Contactors, and Motor Protection Circuit Breakers (MPCB)",
+                    "Thermocouples and RTD sensors for CED curing baking ovens",
+                    "Pneumatic & Solenoid Control Valves for dipping tanks"
+                ],
+                software: [
+                    "Mitsubishi GX Works2 Programming Software",
+                    "Ladder Diagram (LD) & Sequential Function Chart (SFC)",
+                    "SAP Plant Maintenance (PM) Module for work orders",
+                    "Factory I/O and Diagnostics Utility"
+                ],
+                outcomes: [
+                    "Documented full sequence logic for 10 distinct paint shop stations.",
+                    "Investigated and diagnosed root causes for 15+ real factory floor breakdown incidents.",
+                    "Participated in planned preventive maintenance (PM) routines on conveyor drives and pumps.",
+                    "Validated emergency stop loops and safety light curtain response interlocks."
+                ],
+                gallery: [
+                    { src: "images/projects/msil-control-panel-1.jpeg", caption: "Industrial Automation PLC Control Panel at Maruti Suzuki" },
+                    { src: "images/projects/msil-control-panel-2.jpeg", caption: "Relay, Contactor, and Drive Distribution Panel" },
+                    { src: "images/projects/msil-paintshop-tank.jpeg", caption: "Paint Shop Pre-Treatment & Dipping Infrastructure" }
+                ],
+                reportLink: "documents/Saurabh_Kumar_MSIL_Report.pdf",
+                reportTitle: "Read Internship Report (PDF)"
+            },
+            solar_ev: {
+                title: "Solar-Powered Electric Vehicle Charging System with Smart EMS",
+                category: "Power Systems · Renewable Energy · Clean Mobility",
+                image: "images/projects/solar-ev-architecture.png",
+                problem: "Widespread EV adoption risks overloading urban electrical distribution grids, causing voltage dips, transformer overheating, and high peak-demand charges. Furthermore, charging electric vehicles from coal-dominated grid electricity simply shifts emissions from the tailpipe to thermal power plants rather than achieving true zero-emission mobility.",
+                implementation: "Conducted a detailed technical design and seminar project on a grid-interactive, solar-powered EV charging station ecosystem aligned with India's FAME II guidelines. Analyzed the entire multi-stage energy conversion path: High-Efficiency Solar PV Array → Maximum Power Point Tracking (MPPT) Controller using Perturb & Observe (P&O) and Incremental Conductance algorithms → Central DC Bus → Lithium Iron Phosphate (LiFePO4 / LFP) Battery Energy Storage System (BESS) for buffering intermittency → Bidirectional DC-DC Converters & DC-AC Inverters → Electric Vehicle Supply Equipment (EVSE) fast chargers (CCS2 & Bharat DC-001). Formulated a smart Energy Management System (EMS) strategy to prioritize solar self-consumption, store surplus energy during midday solar peaks, buffer EV charging spikes, and investigate Vehicle-to-Grid (V2G) bidirectional discharge during peak grid hours.",
+                hardware: [
+                    "Monocrystalline Solar Photovoltaic (PV) Module Arrays (10 kW – 100 kW scale)",
+                    "High-Efficiency MPPT Charge Controllers (P&O / Incremental Conductance)",
+                    "LiFePO4 (LFP) Battery Energy Storage System (BESS) with BMS monitoring",
+                    "Bidirectional DC-DC Buck-Boost Converters",
+                    "Grid-Tied DC-AC Inverter with synchronization and islanding protection",
+                    "EVSE Chargers: Type-2 AC (up to 22 kW) and CCS-2 DC Fast Chargers (50 kW+)",
+                    "Current Transducers, Voltage Hall-Effect Sensors, and Energy Meters"
+                ],
+                software: [
+                    "MATLAB / Simulink (Simscape Power Systems modeling)",
+                    "P&O and Incremental Conductance MPPT simulation models",
+                    "Solar irradiance and ambient temperature profile modeling",
+                    "BESS State-of-Charge (SoC) management algorithms"
+                ],
+                outcomes: [
+                    "Evaluated up to 60–85% reduction in grid power import during peak daytime solar hours.",
+                    "Mitigated local distribution transformer overloading through localized battery buffering.",
+                    "Analyzed real-world case studies: EESL Charging Hubs, IIT Delhi Microgrid, and the NHEV National Highway Solar Corridor.",
+                    "Assessed techno-economic payback periods and net metering integration under Indian DISCOM regulations."
+                ],
+                gallery: [
+                    { src: "images/projects/solar-ev-station.jpg", caption: "Solar-Integrated EV Charging Hub Architecture" },
+                    { src: "images/projects/solar-ev-flowchart.jpg", caption: "Smart EMS Energy Flow & Grid Balancing Logic" }
+                ],
+                reportLink: "resume/Saurabh_Kumar.pdf",
+                reportTitle: "View Seminar Project Credentials"
+            },
+            upptcl: {
+                title: "400 kV Extra High Voltage (EHV) Substation Operations & Protection",
+                category: "High-Voltage Engineering · Transmission Grid Reliability",
+                image: "images/projects/summer-intern-at-upptcl.png",
+                problem: "Extra-high-voltage (400 kV) transmission networks are the backbone of regional power stability. Sustaining continuous power flow requires flawless switchyard coordination, robust transformer cooling/insulation maintenance, ultra-fast fault clearing, and selective relay coordination to prevent catastrophic grid collapses or blackouts.",
+                implementation: "Conducted extensive field and operational studies at UPPTCL's 400 kV Substation in Gorakhpur. Traced the complete switchyard topology across 400 kV, 220 kV, and 132 kV voltage levels. Evaluated 315 MVA 400/220/33 kV three-phase autotransformers, on-load tap changers (OLTC), Buchholz relays, silica gel breathers, and nitrogen injection fire protection systems (NIFPS). Analyzed SF6 gas circuit breakers, disconnectors/isolators, lightning arresters, and capacitor voltage transformers (CVT). Studied numerical relay panels for differential protection (87T), distance protection (21), and busbar differential protection (87B).",
+                hardware: [
+                    "400 kV / 220 kV / 33 kV 315 MVA Power Autotransformers",
+                    "SF6 Gas Circuit Breakers (Puffer type, 400 kV rated)",
+                    "Motorized Pantograph & Horizontal Double-Break Isolators",
+                    "Gapless Metal-Oxide (ZnO) Surge & Lightning Arresters",
+                    "Capacitive Voltage Transformers (CVT) and Current Transformers (CT)",
+                    "Numerical Protection Relays (Distance, Differential, Overcurrent, Earth Fault)",
+                    "Substation 220V DC Battery Bank for auxiliary control power and tripping coils",
+                    "Substation Earthing Mat and Grounding Electrodes"
+                ],
+                software: [
+                    "Substation Single Line Diagram (SLD) CAD Drawings",
+                    "SCADA Substation Automation System (SAS)",
+                    "Relay tripping event and disturbance recorder analysis"
+                ],
+                outcomes: [
+                    "Mastered end-to-end 400 kV to 220 kV substation power flow and switching sequences.",
+                    "Studied dielectric breakdown voltage (BDV) testing and dissolved gas analysis (DGA) for transformer oil.",
+                    "Verified busbar protection and line distance protection zone settings.",
+                    "Completed formal summer internship report verified by UPPTCL executive engineers."
+                ],
+                gallery: [],
+                reportLink: "certificates/upptcl-certificate.jpg",
+                reportTitle: "View UPPTCL Certificate"
+            }
+        };
+
+        // Scroll Project Rail Left / Right
+        function scrollProjectRail(direction) {
+            const rail = document.getElementById('project-rail');
+            const scrollAmount = rail.clientWidth * 0.85 * direction;
+            rail.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+
+        // Open Experience Modal
+        function openExperienceModal(key) {
+            const data = experiencesData[key];
+            if (!data) return;
+
+            document.getElementById('exp-modal-badge').innerText = data.badge;
+            document.getElementById('exp-modal-title').innerText = data.title + " · " + data.company;
+            document.getElementById('exp-modal-meta').innerText = data.period + " · " + data.location;
+            document.getElementById('exp-modal-summary').innerText = data.summary;
+
+            // Bullets
+            const bulletsContainer = document.getElementById('exp-modal-bullets');
+            bulletsContainer.innerHTML = '';
+            data.bullets.forEach(b => {
+                const li = document.createElement('li');
+                li.className = "flex items-start gap-2.5";
+                li.innerHTML = `<span class="text-teal-700 font-bold mt-0.5">•</span><span>${b}</span>`;
+                bulletsContainer.appendChild(li);
+            });
+
+            // Tags
+            const tagsContainer = document.getElementById('exp-modal-tags');
+            tagsContainer.innerHTML = '';
+            data.tags.forEach(t => {
+                const span = document.createElement('span');
+                span.className = "rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700";
+                span.innerText = t;
+                tagsContainer.appendChild(span);
+            });
+
+            // Action button
+            const actionsContainer = document.getElementById('exp-modal-actions');
+            actionsContainer.innerHTML = '';
+            if (data.reportLink) {
+                const a = document.createElement('a');
+                a.href = data.reportLink;
+                a.target = "_blank";
+                a.className = "inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-2.5 text-xs font-semibold text-white transition hover:bg-slate-800";
+                a.innerHTML = `${data.reportTitle} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>`;
+                actionsContainer.appendChild(a);
+            }
+
+            const modal = document.getElementById('experience-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                document.getElementById('exp-modal-card').classList.remove('scale-95');
+                document.getElementById('exp-modal-card').classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeExperienceModal() {
+            const modal = document.getElementById('experience-modal');
+            const card = document.getElementById('exp-modal-card');
+            card.classList.remove('scale-100');
+            card.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 150);
+        }
+
+        // Open Project Modal
+        function openProjectModal(key) {
+            const data = projectsData[key];
+            if (!data) return;
+
+            document.getElementById('proj-modal-category').innerText = data.category;
+            document.getElementById('proj-modal-title').innerText = data.title;
+            document.getElementById('proj-modal-image').src = data.image;
+            document.getElementById('proj-modal-image').alt = data.title;
+            document.getElementById('proj-modal-problem').innerText = data.problem;
+            document.getElementById('proj-modal-implementation').innerText = data.implementation;
+
+            // Hardware List
+            const hwContainer = document.getElementById('proj-modal-hardware');
+            hwContainer.innerHTML = '';
+            data.hardware.forEach(h => {
+                const li = document.createElement('li');
+                li.innerText = h;
+                hwContainer.appendChild(li);
+            });
+
+            // Software List
+            const swContainer = document.getElementById('proj-modal-software');
+            swContainer.innerHTML = '';
+            data.software.forEach(s => {
+                const li = document.createElement('li');
+                li.innerText = s;
+                swContainer.appendChild(li);
+            });
+
+            // Outcomes
+            const outContainer = document.getElementById('proj-modal-outcomes');
+            outContainer.innerHTML = '';
+            data.outcomes.forEach(o => {
+                const li = document.createElement('li');
+                li.className = "flex items-start gap-2.5";
+                li.innerHTML = `<span class="text-teal-700 font-bold mt-0.5">✓</span><span>${o}</span>`;
+                outContainer.appendChild(li);
+            });
+
+            // Gallery
+            const gallerySection = document.getElementById('proj-modal-gallery-container');
+            const galleryContainer = document.getElementById('proj-modal-gallery');
+            galleryContainer.innerHTML = '';
+            if (data.gallery && data.gallery.length > 0) {
+                gallerySection.classList.remove('hidden');
+                data.gallery.forEach(img => {
+                    const div = document.createElement('div');
+                    div.className = "rounded-xl overflow-hidden border border-slate-200 bg-slate-50";
+                    div.innerHTML = `
+                        <img src="${img.src}" alt="${img.caption}" class="w-full h-44 object-contain bg-white p-2" />
+                        <p class="p-2.5 text-xs text-slate-600 font-medium text-center border-t border-slate-200">${img.caption}</p>
+                    `;
+                    galleryContainer.appendChild(div);
+                });
+            } else {
+                gallerySection.classList.add('hidden');
+            }
+
+            // Actions
+            const actionsContainer = document.getElementById('proj-modal-actions');
+            actionsContainer.innerHTML = '';
+            if (data.reportLink) {
+                const a = document.createElement('a');
+                a.href = data.reportLink;
+                a.target = "_blank";
+                a.className = "inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-2.5 text-xs font-semibold text-white transition hover:bg-slate-800";
+                a.innerHTML = `${data.reportTitle} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>`;
+                actionsContainer.appendChild(a);
+            }
+
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                document.getElementById('proj-modal-card').classList.remove('scale-95');
+                document.getElementById('proj-modal-card').classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            const card = document.getElementById('proj-modal-card');
+            card.classList.remove('scale-100');
+            card.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 150);
+        }
+
+        // Close on backdrop click
+        document.getElementById('experience-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeExperienceModal();
+        });
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeProjectModal();
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeExperienceModal();
+                closeProjectModal();
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuBtn.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                menuBtn.setAttribute('aria-expanded', 'true');
+            } else {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close mobile menu on navigation click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Scroll reveal observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-element').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
